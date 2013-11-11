@@ -14,11 +14,11 @@
 #include <QtMath>
 
 
-class FileRWKit : public QObject
+class QFileIO : public QObject
 {
     Q_OBJECT
 public:
-    explicit FileRWKit(QObject *parent = 0);
+    explicit QFileIO(QObject *parent = 0);
     QVector< QVector<double> > ReadCSV(QString filename);
     
 private:

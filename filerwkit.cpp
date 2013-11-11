@@ -1,11 +1,11 @@
 #include "filerwkit.h"
 
-FileRWKit::FileRWKit(QObject *parent) :
+QFileIO::QFileIO(QObject *parent) :
     QObject(parent)
 {
 }
 
-QVector< QVector<double> > FileRWKit::ReadCSV(QString filename)
+QVector< QVector<double> > QFileIO::ReadCSV(QString filename)
 {
      QFile file(filename);
      QString lineend="";
